@@ -23,25 +23,51 @@ public:
 
 private:
   // TO BE COMPLETED
-  BrowserHistory::BrowserHistory{
-    //create website struct/object which stores url and filesize
-    struct webSite = webSite(url, filesize);
+  //create website struct/object which stores url and filesize
+  struct webSite{
+    string url;
+    size_t filesize;
+    struct webSite* next;
+    struct webSite* prev;
+  }
 
+  BrowserHistory::BrowserHistory{
     //Create a linked list of a history of websites
+   struct* webSite head = NULL;
+   struct* webSite newNode;
+   if (head != NULL){
+     newNode -> ();
+   }
+   else{
+     return webSite;
+   }
 
   }
 
   void BrowserHistory::visitSite(string url, size_t filesize){
+    webSite.append(url, filesize);
   }
 
   void BrowserHistory::backButton(){
     //go back one page
     //if previous page=0, return error message
+    if (prev != NULL){
+      return prev;
+    }
+    else{
+      return NULL;
+    }
   }
 
   void BrowserHistory::forwardButton(){
     //go forwardB
     //if next page=0, return error message
+    if (next != NULL){
+      return next;
+    }
+    else{
+      return NULL;
+    }
   }
 
   void BrowserHistory::readFile(string fileName){
@@ -53,6 +79,8 @@ private:
       }
       else{
         //error
+        cout << "ERROR"<<endl;
+        return 0;
       }
     }
   }
