@@ -86,7 +86,12 @@ private:
   }
 
   string BrowserHistory::string currentUrl(){
-
+    if (currentUrl != NULL){
+      cout<<"Your current website is: "<<string<<endl;
+    }
+    else{
+      return NULL;
+    }
   }
 
   size_t currentPageSize();
