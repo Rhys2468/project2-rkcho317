@@ -28,19 +28,24 @@ private:
   }
 
   void BrowserHistory::visitSite(string url, size_t filesize){
-
+    // get url and return it
+    currentURL() -> url;
+    // get filesize and return it
+    currentPageSize() -> filesize;
   }
 
   void BrowserHistory::backButton(){
-
+    //go back one page
+    //if previous page=0, return error message
   }
 
   void BrowserHistory::forwardButton(){
-
+    //go forwardB
+    //if next page=0, return error message
   }
 
   void BrowserHistory::readFile(string fileName){
-
+    
   }
 
   string BrowserHistory::string currentUrl(){
