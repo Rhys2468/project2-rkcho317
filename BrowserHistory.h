@@ -24,7 +24,9 @@ public:
 private:
   // TO BE COMPLETED
   BrowserHistory::BrowserHistory{
-
+    string url;
+    size_t filesize;
+    string fileName; 
   }
 
   void BrowserHistory::visitSite(string url, size_t filesize){
@@ -45,7 +47,7 @@ private:
   }
 
   void BrowserHistory::readFile(string fileName){
-    
+
   }
 
   string BrowserHistory::string currentUrl(){
