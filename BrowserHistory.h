@@ -23,4 +23,31 @@ public:
 
 private:
   // TO BE COMPLETED
+  BrowserHistory::BrowserHistory{
+
+  }
+
+  void BrowserHistory::visitSite(string url, size_t filesize){
+
+  }
+
+  void BrowserHistory::backButton(){
+
+  }
+
+  void BrowserHistory::forwardButton(){
+
+  }
+
+  void BrowserHistory::readFile(string fileName){
+
+  }
+
+  string BrowserHistory::string currentUrl(){
+
+  }
+
+  size_t currentPageSize();
+  size_t getHistoryLength();
+
 };
