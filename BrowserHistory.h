@@ -27,6 +27,7 @@ private:
     //create website struct/object which stores url and filesize
     //Create a linked list of a history of websites
     struct webSite = webSite(url, filesize);
+
   }
 
   void BrowserHistory::visitSite(string url, size_t filesize){
@@ -47,7 +48,16 @@ private:
   }
 
   void BrowserHistory::readFile(string fileName){
-
+    //use while loop to read file.txt
+    while(myFilee >> fileString){
+      if(mystring=="visit"){
+        myFileName>>myUrl;
+        myFileSize>>mySize;
+      }
+      else{
+        //error
+      }
+    }
   }
 
   string BrowserHistory::string currentUrl(){
