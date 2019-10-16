@@ -25,16 +25,13 @@ private:
   // TO BE COMPLETED
   BrowserHistory::BrowserHistory{
     //create website struct/object which stores url and filesize
-    //Create a linked list of a history of websites
     struct webSite = webSite(url, filesize);
+
+    //Create a linked list of a history of websites
 
   }
 
   void BrowserHistory::visitSite(string url, size_t filesize){
-    // get url and return it
-    currentURL() -> url;
-    // get filesize and return it
-    currentPageSize() -> filesize;
   }
 
   void BrowserHistory::backButton(){
