@@ -24,9 +24,9 @@ public:
 private:
   // TO BE COMPLETED
   BrowserHistory::BrowserHistory{
-    string url;
-    size_t filesize;
-    string fileName; 
+    //create website struct/object which stores url and filesize
+    //Create a linked list of a history of websites
+    struct webSite = webSite(url, filesize);
   }
 
   void BrowserHistory::visitSite(string url, size_t filesize){
