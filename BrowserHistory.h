@@ -35,11 +35,12 @@ private:
     //Create a linked list of a history of websites
    struct* webSite head = NULL;
    struct* webSite newNode;
+
    if (head != NULL){
-     newNode -> ();
+     next -> newNode;
    }
    else{
-     return webSite;
+     return head;
    }
 
   }
